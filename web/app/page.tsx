@@ -58,7 +58,7 @@ const investigations = [
     emoji: "🚔",
     title: "Same Stop, Different Outcome",
     url: "https://samestopdifferentoutcome.org",
-    github: "https://github.com/brunobossgang/same-stop-different-outcome",
+    github: "https://github.com/brunobossgang/same-stop",
     accent: "rose",
     stats: "7.9M stops · 16 states · 2000–2020",
     finding:
@@ -69,7 +69,7 @@ const investigations = [
     emoji: "⚖️",
     title: "Same Crime, Different Time",
     url: "https://samecrimedifferenttime.org",
-    github: "https://github.com/brunobossgang/same-crime-different-time",
+    github: "https://github.com/brunobossgang/justice-index",
     accent: "amber",
     stats: "1.3M cases · 23 years · 2002–2024",
     finding:
@@ -80,7 +80,7 @@ const investigations = [
     emoji: "🏦",
     title: "Same Loan, Different Rate",
     url: "https://sameloandifferentrate.org",
-    github: "https://github.com/brunobossgang/same-loan-different-rate",
+    github: "https://github.com/brunobossgang/same-loan",
     accent: "emerald",
     stats: "15.3M loans · 51 states · 2018–2023",
     finding:
@@ -277,8 +277,8 @@ export default function Home() {
           <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm">
             {investigations.map((inv) => (
               <a
-                key={inv.github}
-                href={inv.github}
+                key={inv.url}
+                href={inv.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-lg border border-white/10 px-4 py-2 text-slate-400 hover:text-white hover:border-white/30 transition"
