@@ -73,7 +73,7 @@ const investigations = [
     accent: "amber",
     stats: "1.3M cases · 23 years · 2002–2024",
     finding:
-      "Black defendants receive +3.85 months longer sentences after controlling for all legal factors",
+      "Minority defendants receive longer sentences after controlling for all legal factors — Black defendants get +3.85 extra months",
     source: "U.S. Sentencing Commission",
   },
   {
@@ -250,7 +250,7 @@ export default function Home() {
           </h2>
           <p className="mt-8 text-lg leading-relaxed text-slate-400">
             On the street, police search minority drivers more — and find less.
-            In the courtroom, Black defendants get longer sentences for the same
+            In the courtroom, minority defendants get longer sentences for the same
             crime. At the bank, minority borrowers pay higher rates for the same
             loan.
           </p>
