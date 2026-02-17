@@ -60,7 +60,7 @@ const investigations = [
     url: "https://samestopdifferentoutcome.org",
     github: "https://github.com/brunobossgang/same-stop",
     accent: "rose",
-    stats: "7.9M stops · 16 states · 2000–2020",
+    stats: "8.6M stops · 18 states · 2000–2020",
     finding:
       "Black drivers searched at 2.2× the rate — contraband found less often",
     source: "Stanford Open Policing Project",
