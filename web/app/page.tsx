@@ -134,6 +134,14 @@ export default function Home() {
             >
               GitHub
             </a>
+            <a
+              href="https://instagram.com/justiceindex"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition"
+            >
+              Instagram
+            </a>
           </div>
         </div>
       </nav>
@@ -315,6 +323,14 @@ export default function Home() {
               className="hover:text-white transition"
             >
               GitHub
+            </a>
+            <a
+              href="https://instagram.com/justiceindex"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition"
+            >
+              Instagram
             </a>
           </div>
           <p className="text-slate-600">© 2026 Justice Index</p>
