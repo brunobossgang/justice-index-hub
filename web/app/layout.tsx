@@ -5,11 +5,16 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Justice Index — Racial Bias in American Institutions",
   description:
-    "Three data investigations exposing racial bias in American institutions. From the traffic stop to the courtroom to the bank. All public data. All open source.",
+    "Data-driven investigations exposing racial disparities across American institutions. 25+ million records analyzed.",
+  metadataBase: new URL("https://justice-index.org"),
+  alternates: {
+    canonical: "/",
+  },
+  authors: [{ name: "Bruno Beckman" }],
   openGraph: {
     title: "Justice Index",
     description:
-      "Three data investigations exposing racial bias in American institutions.",
+      "Data-driven investigations exposing racial disparities across American institutions. 25+ million records analyzed.",
     url: "https://justice-index.org",
     siteName: "Justice Index",
     type: "website",
@@ -41,6 +46,37 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                name: "Justice Index",
+                url: "https://justice-index.org",
+                description:
+                  "Data-driven investigations exposing racial disparities across American institutions. 25+ million records analyzed.",
+                author: {
+                  "@type": "Person",
+                  name: "Bruno Beckman",
+                },
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                name: "Justice Index",
+                url: "https://justice-index.org",
+                logo: "https://justice-index.org/og.png",
+                sameAs: [
+                  "https://x.com/Justice_Index",
+                  "https://instagram.com/justiceindex",
+                  "https://github.com/brunobossgang",
+                ],
+              },
+            ]),
+          }}
+        />
       </head>
       <body className="bg-slate-950 text-white antialiased">
         {children}
